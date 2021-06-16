@@ -1,0 +1,126 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* tailwind-css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* layer base */
+@layer base {
+   body {
+   }
+}
+
+/* layer components */
+@layer components {
+   .button {
+      @apply cursor-pointer focus:outline-none transition duration-500 ease-out;
+   }
+   .icon {
+      @apply h-10 px-2 py-2 rounded-full;
+   }
+   .icon-button {
+      @apply transition duration-500 ease-out cursor-pointer;
+   }
+   .input-text {
+      @apply font-medium bg-transparent border-2 border-opacity-60 border-gray-500 
+      focus:outline-none focus:border-blue-800 focus:border-opacity-80
+      focus:bg-transparent placeholder-gray-500 transition duration-700 ease-out;
+   }
+   .hover-active-gray {
+      @apply sm:hover:bg-gray-500 sm:hover:bg-opacity-20
+      sm:active:bg-gray-500 sm:active:bg-opacity-30
+      active:bg-gray-500 active:bg-opacity-30;
+   }
+   .hover-active-pink {
+      @apply sm:hover:bg-pink-700 sm:hover:bg-opacity-30
+      sm:active:bg-pink-700 sm:active:bg-opacity-50
+      active:bg-pink-700 active:bg-opacity-50;
+   }
+   .hover-active-green {
+      @apply sm:hover:bg-green-700 sm:hover:bg-opacity-30
+      sm:active:bg-green-700 sm:active:bg-opacity-50
+      active:bg-green-700 active:bg-opacity-50;
+   }
+   .hover-active-blue {
+      @apply sm:hover:bg-blue-700 sm:hover:bg-opacity-30
+      sm:active:bg-blue-700 sm:active:bg-opacity-50
+      active:bg-blue-700 active:bg-opacity-50;
+   }
+   .hover-blue {
+      @apply sm:hover:bg-blue-600 sm:hover:bg-opacity-40;
+   }
+   .active-blue {
+      @apply sm:active:bg-blue-600 sm:active:bg-opacity-70
+      active:bg-blue-600 active:bg-opacity-70;
+   }
+   .button-blue {
+      @apply bg-blue-600 sm:hover:bg-blue-700 sm:active:bg-blue-800 active:bg-blue-800
+      text-gray-50 font-semibold;
+   }
+}
+
+/* themes */
+.light {
+   --color-bg-default: rgb(255, 255, 255);
+   --color-bg-paper: #dadadab0;
+   --color-bg-hover-paper: #cacacab0;
+   --color-bg-primary: rgb(115, 141, 226);
+   --color-bg-shadow: #181818cc;
+   --color-text-default: #000000;
+   --color-text-disabled: #505050;
+   --color-text-icon: #0e0e0ed7;
+   --color-text-primary: #354fc4;
+   --color-text-secondary: #5b2ab6;
+   --color-shadow-default: #20202075;
+}
+.dark {
+   --color-bg-default: #080b0e;
+   --color-bg-paper: #12161b;
+   --color-bg-hover-paper: #171c22;
+   --color-bg-primary: rgb(19, 38, 100);
+   --color-bg-shadow: #7c7c7c60;
+   --color-text-default: #ffffff;
+   --color-text-disabled: #a7a7a7;
+   --color-text-icon: #e6e6e6da;
+   --color-text-primary: #243eb4;
+   --color-text-secondary: #5b2ab6;
+   --color-shadow-default: #81818134;
+}
+
+/* not select */
+button,
+textarea,
+input,
+select,
+a,
+svg,
+div{
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/* scroll bar */
+@media (min-width: 600px) {
+   textarea::-webkit-scrollbar,
+   div::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+   }
+   textarea::-webkit-scrollbar-thumb,
+   div::-webkit-scrollbar-thumb {
+      background: rgba(128, 128, 128, 0.39);
+      border-radius: 4px;
+   }
+   textarea::-webkit-scrollbar-track,
+   div::-webkit-scrollbar-track {
+      background: #64646431;
+      border-radius: 4px;
+   }
+}
