@@ -18,7 +18,7 @@ const Login = () => {
 
    // state component
    const [values, setValues] = useState({
-      email: 'testuser@gmail.com',
+      email: 'Lucio_Hettinger@gmail.com',
       password: 'test1234'
    })
    const [errors, setErrors] = useState({})

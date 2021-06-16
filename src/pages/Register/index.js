@@ -14,9 +14,9 @@ const Register = () => {
 
    // state component
    const [values, setValues] = useState({
-      fullname: 'Test User',
-      username: 'testuser',
-      email: 'testuser@gmail.com',
+      fullname: 'Chelsey Dietrich"',
+      username: 'Kamren',
+      email: 'Lucio_Hettinger@gmail.com',
       password: 'test1234',
       confirmPassword: '',
    })
