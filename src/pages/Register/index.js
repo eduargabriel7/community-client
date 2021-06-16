@@ -14,10 +14,10 @@ const Register = () => {
 
    // state component
    const [values, setValues] = useState({
-      fullname: 'Chelsey Dietrich',
-      username: 'Kamren',
-      email: 'Lucio_Hettinger@gmail.com',
-      password: 'test1234',
+      fullname: '',
+      username: '',
+      email: '',
+      password: '',
       confirmPassword: '',
    })
    const [errors, setErrors] = useState({})
