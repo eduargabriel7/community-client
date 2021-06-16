@@ -15,7 +15,7 @@ const httpLink = createHttpLink({
 
 // web socket link
 const wsLink = new WebSocketLink({
-   uri: 'https://eduargabriel7-community-server.herokuapp.com/graphql',
+   uri: 'ws://eduargabriel7-community-server.herokuapp.com/graphql',
    options: {
       reconnect: true
    }
